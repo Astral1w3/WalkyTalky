@@ -10,9 +10,22 @@
 		BB2C41F630866C220047FB36 /* WalkyTalky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkyTalky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BB97287B3087B5FC0005120A /* Exceptions for "WalkyTalky" folder in "WalkyTalky" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BB2C41F530866C220047FB36 /* WalkyTalky */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BB2C41F830866C220047FB36 /* WalkyTalky */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BB97287B3087B5FC0005120A /* Exceptions for "WalkyTalky" folder in "WalkyTalky" target */,
+			);
 			path = WalkyTalky;
 			sourceTree = "<group>";
 		};
@@ -241,11 +254,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WalkyTalky/WalkyTalky.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TPT7NHKPJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalkyTalky/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Walky Talky reads step count and walking distance from HealthKit to display cumulative walk statistics alongside your notes.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Walky Talky requires background location access to accurately track steps and distance during an Active Walk session when your screen is locked.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Walky Talky logs your walking location to pin where your thoughts and insights occurred along your route.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Walky Talky uses your microphone to transcribe your walking thoughts into text while you walk.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Walky Talky accesses motion data to count your steps in real time and notify you at your configured walking milestones.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Walky Talky uses on-device speech recognition to privately convert your spoken thoughts into notes without internet access.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -273,11 +294,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WalkyTalky/WalkyTalky.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TPT7NHKPJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalkyTalky/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Walky Talky reads step count and walking distance from HealthKit to display cumulative walk statistics alongside your notes.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Walky Talky requires background location access to accurately track steps and distance during an Active Walk session when your screen is locked.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Walky Talky logs your walking location to pin where your thoughts and insights occurred along your route.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Walky Talky uses your microphone to transcribe your walking thoughts into text while you walk.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Walky Talky accesses motion data to count your steps in real time and notify you at your configured walking milestones.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Walky Talky uses on-device speech recognition to privately convert your spoken thoughts into notes without internet access.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
